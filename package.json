@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/demo-collection/electron-simple/issues"
   },
-  "homepage": "https://github.com/demo-collection/electron-simple#readme"
+  "homepage": "https://github.com/demo-collection/electron-simple#readme",
+  "devDependencies": {
+    "electron": "^7.1.5"
+  }
 }
