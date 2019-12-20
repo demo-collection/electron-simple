@@ -16,7 +16,7 @@ function createWindow() {
     },
   });
 
-  win.loadFile('index.html');
+  win.loadFile('src/index.html');
 
   // 打开开发工具
   win.webContents.openDevTools();
