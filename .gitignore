@@ -26,6 +26,10 @@ worker/
 /packages/**/*.js.map
 !jest.config.js
 
+src/**/*.js
+src/**/*.js.map
+!jest.config.js
+
 tempDownload/
 
 npm-debug.log*

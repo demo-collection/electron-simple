@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/demo-collection/electron-simple#readme",
   "devDependencies": {
-    "electron": "^7.1.5"
+    "@types/node": "^13.5.3",
+    "electron": "^7.1.5",
+    "typescript": "^3.7.5"
   }
 }
