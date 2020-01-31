@@ -2,9 +2,9 @@
   "name": "electron-simple",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.js",
+  "main": "build/main.js",
   "scripts": {
-    "start": "electron src/main.js"
+    "start": "electron build/main.js"
   },
   "repository": {
     "type": "git",

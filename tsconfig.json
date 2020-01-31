@@ -20,7 +20,7 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
-    //    "outDir": "build",
+    "outDir": "build",
     "baseUrl": ".",
     "lib": [
       "es6",
@@ -28,8 +28,8 @@
       "es7"
     ],
     "types": [
-//      "node",
-//      "@types/jest"
+      //      "node",
+      //      "@types/jest"
     ]
   },
   "include": [
