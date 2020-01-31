@@ -29,6 +29,7 @@ worker/
 src/**/*.js
 src/**/*.js.map
 !jest.config.js
+!build/index.html
 
 tempDownload/
 
