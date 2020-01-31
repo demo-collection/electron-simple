@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <!--    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
     <link rel="stylesheet" href="../src/css/main.css">
     <title>Hello World!</title>
 </head>
@@ -23,7 +23,7 @@
 
 <!-- 这是一个非常奇葩的 hack -->
 <!-- 可以参看这个地址：https://stackoverflow.com/questions/43042889/typescript-referenceerror-exports-is-not-defined -->
-<script>var exports = {};</script>
+<script> var exports = {}; </script>
 <script src="renderer.js"></script>
 </body>
 </html>
