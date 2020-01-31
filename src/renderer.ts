@@ -1,3 +1,3 @@
-import getProcessInfo from './core/getProcessInfo';
+import './core/getProcessInfo';
+import './core/drag';
 
-getProcessInfo();

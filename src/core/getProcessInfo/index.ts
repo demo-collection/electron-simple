@@ -5,4 +5,4 @@ const getProcessInfo = () => {
 
 document.getElementById('get-process').addEventListener('click', getProcessInfo);
 
-export default getProcessInfo;
+export default {};

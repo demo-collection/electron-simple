@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/demo-collection/electron-simple#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.149",
     "@types/node": "^13.5.3",
     "electron": "^7.1.5",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
