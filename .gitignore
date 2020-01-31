@@ -9,7 +9,6 @@ coverage/
 /mock2easy/
 
 # production
-/build
 /coverage
 
 worker/
@@ -29,7 +28,9 @@ worker/
 src/**/*.js
 src/**/*.js.map
 !jest.config.js
-!build/index.html
+!/build/index.html
+/build/**/*.js
+/build/**/*.js.map
 
 tempDownload/
 
