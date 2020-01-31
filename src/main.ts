@@ -3,7 +3,7 @@ import * as path from 'path';
 
 let mainWindow: any;
 
-function createWindow () {
+function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -12,7 +12,7 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true, // 是否集成node
       webviewTag: true,
-    }
+    },
   });
 
   mainWindow.loadFile('index.html');
@@ -20,8 +20,8 @@ function createWindow () {
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
-  mainWindow.on('closed', function () {
-    mainWindow = null
+  mainWindow.on('closed', function() {
+    mainWindow = null;
   });
 
   mainWindow.once('ready-to-show', () => mainWindow.show());
@@ -29,11 +29,11 @@ function createWindow () {
 
 app.on('ready', createWindow);
 
-app.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') app.quit()
+app.on('window-all-closed', function() {
+  if (process.platform !== 'darwin') app.quit();
 });
 
-app.on('activate', function () {
-  if (mainWindow === null) createWindow()
+app.on('activate', function() {
+  if (mainWindow === null) createWindow();
 });
 
