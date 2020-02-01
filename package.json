@@ -3,20 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/main.js",
-  "build-config": {
-    "appid": "001",
-    "version": "001",
-    "productName": "autoupdater-demo",
-    "asar": false,
-    "directories": {
-      "output": "dist"
-    },
-    "mac": {},
-    "files": [
-      "build",
-      "package.json"
-    ]
-  },
   "scripts": {
     "start": "electron build/main.js",
     "ts:build": "ts-node -P tsconfig.json config/task/build.ts",
