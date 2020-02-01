@@ -1,6 +1,5 @@
-import { app, BrowserWindow, Menu, MenuItem } from 'electron';
+import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
-import MenuItemConstructorOptions = Electron.MenuItemConstructorOptions;
 
 let mainWindow: any;
 
@@ -16,10 +15,11 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile('./index.html');
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools();
+
 
   mainWindow.on('closed', function() {
     mainWindow = null;
