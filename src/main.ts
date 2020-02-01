@@ -1,5 +1,6 @@
-import {app, BrowserWindow} from 'electron';
+import { app, BrowserWindow, Menu, MenuItem } from 'electron';
 import * as path from 'path';
+import MenuItemConstructorOptions = Electron.MenuItemConstructorOptions;
 
 let mainWindow: any;
 
@@ -24,7 +25,39 @@ function createWindow() {
     mainWindow = null;
   });
 
-  mainWindow.once('ready-to-show', () => mainWindow.show());
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show();
+
+    // 在主进程中弹出菜单的一个示例
+    // 很少在主进程这样做， 很少有这样的需求， 这里只是举一个例子而已
+    // setTimeout(() => {
+    //   const template: MenuItemConstructorOptions[] = [
+    //     {
+    //       label: '第一个菜单',
+    //     },
+    //     {
+    //       label: '第2个菜单',
+    //     },
+    //     {
+    //       role: 'undo',
+    //     },
+    //     {
+    //       type: 'separator',
+    //     },
+    //     {
+    //       label: '第3个菜单',
+    //     },
+    //     {
+    //       label: '第4个菜单',
+    //     },
+    //   ];
+    //
+    //   const menu = Menu.buildFromTemplate(template);
+    //   Menu.setApplicationMenu(menu);
+    //   menu.popup();
+    // }, 2000);
+
+  });
 }
 
 app.on('ready', createWindow);
