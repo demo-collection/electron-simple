@@ -3,3 +3,4 @@ import './render-core/drag';
 import './render-core/window';
 import './render-core/dialog';
 import './render-core/openMenu';
+import './render-core/net';
