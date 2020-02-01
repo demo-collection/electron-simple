@@ -1,4 +1,4 @@
-import './core/getProcessInfo';
-import './core/drag';
-import './core/window';
-import './core/dialog';
+import './render-core/getProcessInfo';
+import './render-core/drag';
+import './render-core/window';
+import './render-core/dialog';
