@@ -1,7 +1,5 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
-import { pathConfig } from './main-core/utils/path.config';
-const NODE_ENV = process.env.NODE_ENV;
 
 let mainWindow: any;
 

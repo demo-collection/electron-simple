@@ -21,7 +21,7 @@
     "start": "electron build/main.js",
     "ts:build": "ts-node -P tsconfig.json config/task/build.ts",
     "build-win": "electron-builder --win --ia32",
-    "build-all": "cross-env NODE_ENV=production tsc && yarn ts:build"
+    "build-all": "tsc && yarn ts:build"
   },
   "repository": {
     "type": "git",
