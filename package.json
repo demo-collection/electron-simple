@@ -3,8 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/main.js",
+  "build-config": {
+    "appid": "001",
+    "version": "001",
+    "productName": "autoupdater-demo",
+    "asar": false,
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {},
+    "files": [
+      "build",
+      "package.json"
+    ]
+  },
   "scripts": {
-    "start": "electron build/main.js"
+    "start": "electron build/main.js",
+    "build-win": "electron-builder --win --ia32",
+    "build-mac": "tsc && electron-builder"
   },
   "repository": {
     "type": "git",
@@ -20,6 +36,7 @@
     "@types/lodash": "^4.14.149",
     "@types/node": "^13.5.3",
     "electron": "^7.1.5",
+    "electron-builder": "^22.3.2",
     "typescript": "^3.7.5"
   },
   "dependencies": {

@@ -10,6 +10,7 @@ coverage/
 
 # production
 /coverage
+/dist/
 
 worker/
 
